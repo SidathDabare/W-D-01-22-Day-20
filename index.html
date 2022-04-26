@@ -449,13 +449,12 @@
 
       function removeFirstCrackters() {
         let caracters = document.querySelector(
-          ".blog-main > div.blog-post > p+p"
+          ".blog-main > div.blog-post > p + p"
         ).innerText;
-        for (let i = 0; i < 50; i++) {
-          caracters[i].style.color = "red";
-          caracters[i].slice(0, 50);
-          //   caracters[i].slice(0, 50);
-        }
+        let newStr = caracters.slice(50, caracters.length);
+        console.log(newStr);
+        document.querySelector(".blog-main > div.blog-post > p + p").innerText =
+          newStr;
       }
       removeFirstCrackters();
       //   console.log(caracters);
