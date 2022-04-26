@@ -1,0 +1,52 @@
+/* --------- 01 Write a selector to target the h1 in the first “hero” section----------- */
+/* body > div > div > div > h1 {
+  color: rgb(157, 125, 8);
+} */
+.jumbotron > div > h1 {
+  color: aqua;
+}
+/* --------- 02 Write a selector to target every children of the navbar----------- */
+body > div > nav > span {
+  color: green;
+}
+/* --------- 03 Write a selector to target the “continue reading…” inside the jumbotron----------- */
+body > div > div > div > h1 + p + p > a {
+  color: rgb(255, 42, 0);
+}
+/* --------- 04 Write a selector to target the first blogpost----------- */
+.container > div + div > div:first-child {
+  background-color: aqua;
+}
+/* --------- 05 Write a selector to target the first blogpost <hr> and turn it red----------- */
+.blog-post > hr {
+  border-top: 1px solid red;
+}
+/* --------- 06 Write a selector to target the “even” links in the navbar----------- */
+nav > span:nth-child(even) {
+  background-color: aqua;
+}
+/* --------- 07 Write a selector to target all the <li> into the first ordered-list in the sidebar ( Archives )----------- */
+aside > div + div > ol > li {
+  background-color: rgb(255, 255, 127);
+}
+
+/* --------- 08 Write a selector to target the second blog-post author----------- */
+.blog-main > div:nth-child(4) > h2 + p > a {
+  background-color: red;
+}
+/* --------- 09 Write a selector to target the second <li> in the third blog-post unordered-list ----------- */
+.blog-post > ul > li:nth-child(2) {
+  background-color: yellow;
+}
+/* --------- 10 Write a selector to target the “back to top” link you can find at the bottom-right corner ----------- */
+footer + a {
+  background-color: red;
+}
+/* --------- 11 Write a selector to target the “Newer” button at the bottom ----------- */
+.blog-pagination > a:nth-child(2) {
+  background-color: rgb(255, 0, 0);
+}
+/* --------- 12 Write a selector to target the footer’s second link ----------- */
+.blog-footer > p > a + a {
+  background-color: red;
+}
